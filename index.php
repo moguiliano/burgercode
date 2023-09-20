@@ -14,7 +14,7 @@
     
     <body>
         <div class="container site">
-            <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> MY BURGER <span class="glyphicon glyphicon-cutlery"></span></h1>
+            <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> Burger Code <span class="glyphicon glyphicon-cutlery"></span></h1>
             <?php
 				require 'admin/database.php';
 			 

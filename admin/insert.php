@@ -49,7 +49,11 @@
                 $imageError = "Les fichiers autorises sont: .jpg, .jpeg, .png, .gif";
                 $isUploadSuccess = false;
             }
-           
+            if(file_exists($imagePath)) 
+            {
+                $imageError = "Le fichier existe deja";
+                $isUploadSuccess = false;
+            }
             if($_FILES["image"]["size"] > 500000) 
             {
                 $imageError = "Le fichier ne doit pas depasser les 500KB";
@@ -87,7 +91,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MY BURGER</title>
+        <title>Burger Code</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
